@@ -6,10 +6,12 @@ void main(){
     printf("Enter number\n");
     scanf("%d", &num);
 
+    while (num!=0)
+    {
     temp = num % 10;
-    num = num /10;
     rev = (rev*10)+temp;
-
+    num = num /10;
+    }
    
     printf("Reverse is %d",rev );
 
