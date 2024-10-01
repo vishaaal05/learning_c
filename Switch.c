@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int main()
 {
-    int num;
+    char ch;
     int a, b, c;
     printf("Choose any number\n");
     printf("1. Addition\n");
@@ -11,10 +11,10 @@ int main()
     printf("4.Division\n");
     printf("5.Exit\n");
 
-    scanf("%d", &num);
-    switch (num)
+    scanf("%c", &ch);
+    switch (ch)
     {
-    case 1:
+    case '+':
 
         printf("Enter first number\n");
         scanf("%d", &a);
@@ -24,7 +24,7 @@ int main()
         printf("Sum of two number is %d", c);
         break;
 
-    case 2:
+    case '-':
 
         printf("Enter first numbers\n");
         scanf("%d", &a);
@@ -34,7 +34,7 @@ int main()
         printf("Substraction of two numbers is %d", c);
         break;
 
-    case 3:
+    case '*':
 
         printf("Enter first number\n");
         scanf("%d", &a);
@@ -44,7 +44,7 @@ int main()
         printf("Substraction of two numbers is %d", c);
         break;
 
-    case 4:
+    case '/':
 
         printf("Enter first number\n");
         scanf("%d", &a);
@@ -54,7 +54,7 @@ int main()
         printf("Substraction of two numbers is %d", c);
         break;
 
-    case 5:
+    case 'e':
         exit(0);
         break;
 
