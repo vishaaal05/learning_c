@@ -7,7 +7,7 @@ int main() {
     printf("Enter an integer: ");
     scanf("%d", &num);
 
-    // Reverse the number
+    // Reverse the numberh  
     while (num != 0) {
         remainder = num % 10;          
         reversed = reversed * 10 + remainder; 
