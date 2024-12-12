@@ -13,7 +13,7 @@ int main() {
 
   // Assign values to members of s1
   s1.myNum = 13;
-  strcpy(s1.myName, "Vishal");
+  strcpy(s1.myName, "Vishal"); 
 
   // Print values
   printf("My number: %d\n", s1.myNum);
