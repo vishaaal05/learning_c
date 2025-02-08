@@ -3,12 +3,13 @@
 
 int main()
 {
-    int num = 45;
-    int* ptr = &num;
-    printf("%d\n", num);
-    printf("%p\n", &num);
-    printf("%p\n", ptr);
-    printf("%d\n", *ptr);
-    printf("%d\n", &num);
+    int arr[] = {1,2,3,4,5};
+    int* ptr1 = arr;
+    int* ptr2 = &arr;
+    printf("Address : %p\n", ptr1);
+    printf("Address : %p\n", ptr2);
+    printf("Address : %p", &arr[0]);
+
+    
     return 0;
 }
