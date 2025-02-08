@@ -1,16 +1,16 @@
 #include <stdio.h>
+#include <string.h>  // Required for strcspn()
 
 int main() {
-    char firstName[30];
+    char name[30];
 
-    // Ask the user to input some text
-    printf("Enter your full name: \n");
+    printf("Enter your name: ");
+    fgets(name, sizeof(name), stdin);  // Takes input with newline
 
-    // Use fgets instead of scanf
-    fgets(firstName, sizeof(firstName), stdin);
+    // Remove the newline character
+    name[strcspn(name, "\n")] = '\0';
 
-    // Output the text
-    printf("Hello %s", firstName);
+    printf("Hello %s", name);
 
     return 0;
 }
